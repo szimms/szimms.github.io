@@ -646,8 +646,7 @@ footer{
     }
 
     .left-arrow {
-        left: 0rem;
-        margin-left: -4rem;
+        left: -10rem;
         right: unset;
         position: absolute;
     }
