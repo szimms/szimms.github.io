@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700,800,900");
+
+*{
+ color: white;
+}
+
+body{
+    background-color: #292929;
+    overflow-x: hidden;
+}
+
+.menuBarContainer{
+    top: 0;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    display: flex; /* makes the text in a row horrizontally*/
+    justify-content: space-between;
+    align-items: center; /* Add this line to vertically center children */
+    max-width: 100%;
+    width: 100vw;
+    border-bottom: 1px solid #000;
+    background-color: #292929;
+    position: fixed;
+    z-index: 1;
+}
+
+.menuBarContainer .icon,
+.menuBarContainer .icon i{
+    display: none; /* Hide the icon by default */
+}
+
+.menuBarContainer a{
+    text-decoration: none;
+    font-family: 'Epilogue';
+}
+
+.menuBarContainer h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: .5rem
+}
+
+/* header .menuBarContainer h3 a{
+    padding-left: 5rem;
+    font-size: 20px;
+    font-weight: 900;
+} */
+
+
+.menuUL{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    border-color: #000;
+    font-family: 'Epilogue';
+    font-size: 0.875rem;
+    padding: 0;
+}
+
+.menuUL li{
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    max-width: 100%;
+    width: 100vw;
+}
+.composite{
+    flex: 1;
+    width: 100px;
+    text-align: right;
+    padding-top: 7rem;
+    padding-right: 10rem;
+    margin-left: 25rem;
+}
+
+.composite img{
+    width: 220px;
+}
+
+
+.hero .heroContent{
+    flex:1;
+    text-align: center;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    margin-right: 17rem;
+}
+
+.hero .heroContent h1{
+    font-family: 'Rubik';
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.hero .heroContent p{
+    font-size: 18px;
+}
+
+.smallImage{
+    width: 2rem;
+    height: 2rem;
+}
+
+#resume{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+
+}
+
+#resume a{
+    color: black;
+    font-weight: 800;
+    font-family: 'Epilogue';
+    text-decoration: none;
+}
+
+#resume:hover{
+    transform: scale(1.1);
+}
+
+.aboutSection{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 75%;
+    padding-left: 200px;
+    gap: 30px
+}
+
+.aboutSection img{
+    width: 212px;
+    border-radius: 10px;
+}
+.aboutSection h1,
+.projects h1,
+.aboutSection2 h1,
+.contactSection h1{
+    font-family: 'Rubik';
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.aboutCards{
+    display: flex;
+    flex-direction: column;
+    gap: 140px; 
+}
+
+.university,
+.education,
+.passions,
+.evansSection{
+    display: flex; /* makes items in the div be in a row */
+    align-items: flex-start;
+    gap: 67px;
+}
+
+/* to flip image/text order in the middle section */
+.education {
+    flex-direction: row-reverse;
+    gap: 65px;
+}
+
+.textABME{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column; /* stack the text*/
+    flex: 1; /* fill whatever space is left */
+}
+
+.textABME p{
+    font-family: 'Epilogue';
+    font-size: 16px;
+    margin-bottom: 0;
+    /* max-width: 500px; */
+    
+}
+
+.textABME h3,
+.evansSection h3{
+    font-family: 'Epilogue';
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.textABME h4{
+    font-family: 'Epilogue';
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.textABME li{ 
+    font-family: 'Epilogue';
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.seperateLi{
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+
+
+
+#wga strong{
+    color: #006241;
+    /* color: black; */
+}
+#wga{
+    color:#006241;
+    background: yellow;
+}
+
+#evansLogo{
+    background: #fff;
+}
+
+.projects{
+    margin-top: 10rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100vw;
+    max-width: 75%;
+    padding-left: 200px;
+    position: relative;
+    /* gap: 30px */
+}
+
+ .carousel-container {
+    width: 700px; /* Adjust as needed */
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;       
+    background-color: #A8A8A8;
+    border-radius: 40px;
+    position: relative; /* this line brought the arrows back and im not sure why */
+}
+.carousel{
+       display: flex;
+       transition: transform 5s ease-in-out; /* Add transition for smooth animation */
+}
+.item {
+    width: 100%;
+    height: 400px; /* Match the carousel-container height */
+    flex-shrink: 0;
+    display: none;
+    position: relative; /* Make this a positioning context */
+    /* Remove align-items: center since we're positioning absolutely */
+}
+
+.item img {
+    position: absolute;
+    top: 3.125rem; /* Fixed position from top instead of centering */
+    left: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.item:first-child {
+       display: block; /* Show the first item */
+}
+
+.textCARO {
+    position: absolute;
+    top: 2.5rem; /* Same fixed position as image - this locks it in place */
+    left: 21.25rem; /* 20px + 300px + 20px gap */
+    text-align: left;
+    max-width: calc(100% - 360px);
+
+}
+
+.textCARO h3 {
+    font-family: 'Epilogue';
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.textCARO p {
+    font-family: 'Epilogue';
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.arrow{ /* ig we give them two classes, their individual postion and then also arrow class */
+    background-color: transparent;
+    border: 0;
+    cursor: pointer; /* indicates this is something clickable */
+    position: absolute; /* Put them on top of each other */
+    top: 50%; /* dont understand what this line and v that line do*/
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.left-arrow{
+    left: 14rem;
+}
+
+.right-arrow{
+    right: 4rem;
+}
+
+.arrow:hover{
+    opacity: 0.3;
+}
+
+.aboutSection2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 75%;
+    padding-left: 200px;
+    gap: 30px
+}
+
+.aboutSection2 img{
+    width: 212px;
+    border-radius: 10px;
+}
+
+
+.contactSection{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 75%;
+    padding-left: 200px;
+    gap: 30px
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+#email,
+#name,
+#message {
+    margin-bottom: 2rem;
+    font-family: 'Epilogue';
+    font-size: 16px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0px 15px 0px;
+  font-family: "Epilogue";
+  font-size: 16px;
+
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: transparent;
+}
+textarea {
+  height: 150px;
+}
+input[type='submit'] {
+background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: 600;
+    /* transition: transform 0.3s ease; */
+
+}
+input[type='submit']:hover {
+  background-color: #d1d1d1;
+  /* transform: scale(1.1); */
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* padding: rem; */
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Epilogue';
+    font-size: 14px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Mobile styles go here */
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .menuBarContainer {
+        overflow: visible; /* Allow overflow for the menu */
+        background-color: #333;
+        position: fixed;
+        flex-direction: row; 
+        align-items: center;
+        z-index: 100;
+    }
+
+    .menuBarContainer .icon,
+    .menuBarContainer .icon i {
+        display: flex;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-left: auto; /* Align icon to the right */
+        align-items: center; /* Center the icon vertically */
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) by default */
+    .menuBarContainer #menuUL {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #333;
+        border-bottom: 1px solid #222;
+        z-index: 99;
+        margin-top: 1.1px;
+    }
+
+    /* Show menu vertically when active (add .active class with JS) */
+    .menuBarContainer #menuUL.active {
+        display: flex;
+    }
+
+    .menuBarContainer #menuUL li { /* Style for each menu item */
+        width: 100vw;
+        max-width: 100%;
+        text-align: left;
+        padding: 1rem 2rem;
+        margin: 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .menuBarContainer a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hamburger menu icon styles */
+    .menuBarContainer a.icon {
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        padding: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .composite {
+        flex: 1;
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        padding-top: 7rem;
+    }
+
+    .hero .heroContent {
+        flex: 1;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutSection,
+    .aboutSection2,
+    .contactSection{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        max-width: 100%;
+        padding-left: 0px;
+        gap: 30px
+    }
+
+    .aboutSection h1{
+        text-align: center;
+    }
+    .aboutCards{
+        display: flex;
+        flex-direction: column;
+        gap: 140px; 
+    }
+
+    .university,
+    .education,
+    .passions,
+    .evansSection{
+        display: flex; /* makes items in the div be in a row */
+        align-items: flex-start;
+        gap: 67px;
+    }
+    .university,
+    .education,
+    .passions,
+    .evansSection,
+    .aboutSection2,
+    .contactSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contactSection{
+        margin-top: 5rem;
+    }
+
+    .projects {
+        margin-top: 5rem;
+        width: 100vw;
+        max-width: 100%;
+        padding-left: 0;
+        position: relative;
+    }
+    .projects h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .carousel-container {
+        width: 75vw; /* Use 95% of viewport width for mobile responsiveness */
+        max-width: 100%; /* Prevent container from exceeding parent width */
+        height: auto; /* Allow height to adjust based on content */
+        min-height: 320px; /* Set minimum height to maintain visual consistency */
+        margin: 2rem auto; /* Add top/bottom margin and center horizontally */
+        border-radius: 20px; /* Reduce border radius for better mobile appearance */
+        padding: 1rem 0; /* Add vertical padding inside container */
+    }
+
+    .carousel {
+        flex-direction: column;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .item {
+        width: 100%;
+        height: auto;
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .item img {
+        position: static;
+        width: 50vw;
+        max-width: 90vw;
+        height: auto;
+        max-height: 220px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .textABME{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        align-items: flex-start;
+        /* Stack text under image on mobile */
+        order: 2;
+        text-align: left;
+        align-items: center;
+    }
+
+    .textABME h4{
+        align-items: left; !important
+   }
+
+    .textCARO {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        max-width: 80%;
+        text-indent: 1rem;
+    }
+
+    .textCARO p{
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .textCARO h3 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+    }
+
+    .arrow {
+        font-size: 2.2rem;
+        top: 20%;
+        bottom: 1rem;
+        transform: none;
+        opacity: 0.7;
+    }
+
+    .left-arrow {
+        left: 0rem;
+        right: unset;
+        position: absolute;
+    }
+
+    .right-arrow {
+        right: 0rem;
+        left: unset;
+        position: absolute;
+    }
+
+
+
+    input[type='submit']{
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    input[type='submit']:hover {
+        background-color: #d1d1d1;
+        /* transform: scale(1.1); */ 
+    }
+
+    footer{
+        padding-bottom: 4rem;
+    }
+
+    .evansSection .aboutSection2 .textABME ul,
+    .evansSection .aboutSection2 .textABME li{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .evansSection .aboutSection2 .textABME ul h4{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+   .evansSection .aboutSection2 .textABME h4{
+        /* float: left; */
+    }
+
+
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) { */
+    /* Tablet styles go here */
+/* } */ 
+
+
+
