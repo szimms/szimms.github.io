@@ -503,6 +503,19 @@ footer{
         margin: 0;
     }
 
+    #resume {
+        width: 8rem;
+        height: 4rem;
+        border-radius: 15px;
+        border: none;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+    }
+    #resume a {
+        font-size: 1rem;
+    }
+
+
     .aboutSection,
     .aboutSection2,
     .contactSection{
