@@ -504,15 +504,15 @@ footer{
     }
 
     #resume {
-        width: 6rem;
+        /* width: 6rem;
         height: 2rem;
         border-radius: 15px;
         border: none;
         background-color: #fff;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease; */
     }
     #resume a {
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
 
