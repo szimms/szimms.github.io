@@ -119,7 +119,9 @@ body{
     /* font-size: 18px; */
 
     /*  */
-    font-size: clamp(16px, 2.5vw, 18px);
+
+    /* font-size: clamp(16px, 2.5vw, 18px); */
+    font-size: 16px;;
     line-height: 1.5;
     max-width: 60ch;
     margin: 0 auto;
@@ -127,8 +129,8 @@ body{
 }
 
 .smallImage{
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     margin-top: .5rem;
     margin-bottom: .2rem;
 }
@@ -256,11 +258,18 @@ body{
 }
 
 .seperateLi{
-    display: inline-block; 
+    /* display: inline-block; */
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
+.evansLeadershipDropdown{
+    display: none;
+}
 
+.evansExperience li i{
+    cursor: pointer;
+}
 
 #wga strong{
     color: #006241;
@@ -564,6 +573,10 @@ footer{
         padding: 0;
         margin: 0;
     }
+
+    .hero .heroContent p {
+       font-size: 18px;
+    }
     
     .smallImage{
         margin-top: .5rem;
@@ -583,7 +596,6 @@ footer{
     #resume a {
         font-size: .875rem;
     }
-
 
     .aboutSection,
     .aboutSection2,

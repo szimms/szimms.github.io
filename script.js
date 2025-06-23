@@ -4,6 +4,9 @@
    const nextButton = document.querySelector('.right-arrow');
    const items = Array.from(document.querySelectorAll('.item'));
    let currentItem = 0;
+
+   let dropdown = document.querySelector('.dropdown');
+   let dropdownContent = document.querySelector('.evansLeadershipDropdown');
    
    
    
@@ -33,4 +36,13 @@
         } else {
             x.style.display = "block";
         }
-}
+    }
+
+    function evansDropdown(){
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+    }
+
