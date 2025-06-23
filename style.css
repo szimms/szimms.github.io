@@ -261,6 +261,7 @@ body{
     /* display: inline-block; */
     margin-bottom: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .evansLeadershipDropdown,
