@@ -263,7 +263,9 @@ body{
     font-weight: bold;
 }
 
-.evansLeadershipDropdown{
+.evansLeadershipDropdown,
+.evansLeadershipDropdown2,
+.evansLeadershipDropdown3{
     display: none;
 }
 

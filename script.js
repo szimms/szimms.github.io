@@ -7,6 +7,8 @@
 
    let dropdown = document.querySelector('.dropdown');
    let dropdownContent = document.querySelector('.evansLeadershipDropdown');
+   let dropdownContent2 = document.querySelector('.evansLeadershipDropdown2');
+   let dropdownContent3 = document.querySelector('.evansLeadershipDropdown3');
    
    
    
@@ -43,6 +45,22 @@
             dropdownContent.style.display = "none";
         } else {
         dropdownContent.style.display = "block";
+        }
+    }
+
+    function evansDropdown2(){
+        if (dropdownContent2.style.display === "block") {
+            dropdownContent2.style.display = "none";
+        } else {
+        dropdownContent2.style.display = "block";
+        }
+    }
+
+    function evansDropdown3(){
+        if (dropdownContent3.style.display === "block") {
+            dropdownContent3.style.display = "none";
+        } else {
+        dropdownContent3.style.display = "block";
         }
     }
 
