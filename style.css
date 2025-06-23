@@ -578,7 +578,7 @@ footer{
         background-color: #fff;
         transition: transform 0.3s ease;
         margin-top: 2rem;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     #resume a {
         font-size: .875rem;
