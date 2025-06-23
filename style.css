@@ -394,6 +394,7 @@ body{
     max-width: 75%;
     padding-left: 200px;
     gap: 30px
+    align-items: center;
 }
 
 .aboutSection2 img{
