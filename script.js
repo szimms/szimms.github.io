@@ -9,6 +9,7 @@
    let dropdownContent = document.querySelector('.evansLeadershipDropdown');
    let dropdownContent2 = document.querySelector('.evansLeadershipDropdown2');
    let dropdownContent3 = document.querySelector('.evansLeadershipDropdown3');
+let dropdownContent4 = document.querySelector('.evansLeadershipDropdown4');
    
    
    
@@ -61,6 +62,14 @@
             dropdownContent3.style.display = "none";
         } else {
         dropdownContent3.style.display = "block";
+        }
+    }
+
+    function evansDropdown4(){
+        if (dropdownContent4.style.display === "block") {
+            dropdownContent4.style.display = "none";
+        } else {
+        dropdownContent4.style.display = "block";
         }
     }
 
