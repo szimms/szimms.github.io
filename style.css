@@ -827,6 +827,12 @@ footer{
         font-weight: 600;
         line-height: 1.4;
     }
+    .evansLeadershipDropdown,
+    .evansLeadershipDropdown2,        
+    .evansLeadershipDropdown3,
+    .evansLeadershipDropdown4 {
+        display: none;
+    }
 
 
 }
